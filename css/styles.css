@@ -301,6 +301,7 @@ header {
 }
 .team-item {
     width: calc((100% - 60)/4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team .member {
@@ -432,7 +433,7 @@ footer {
 address {
     display: block;
     font-style: normal;
-    padding-top: 20px;
+    margin-top: 20px;
     width: 231px;
     height: 81px;
     
@@ -543,8 +544,8 @@ main {
    
 }
 
- .holder .button-portfolio.current:hover,
- .holder .button-portfolio.current:focus {
+ .holder .button-portfolio:hover,
+ .holder .button-portfolio:focus {
     background-color:var(--accent-color);
     color: var(--white-color);
 }
@@ -557,6 +558,14 @@ main {
 }
 .button-portfolio {
     padding: 6px 22px;
+
+    
+}
+
+
+.button-portfolio:hover,
+.button-portfolio:focus  {
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .box-list {
     display: flex;
@@ -564,23 +573,22 @@ main {
     gap: 30px;
 }
 
+.box-list .list:hover,
+.box-list .list:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .assortment-box{
     border: 1px solid var(--border-color);
     border-top: 0;
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding: 20px 24px ;
     
-
 }
 .box-list .section {
 
     margin-bottom: 4px;
 }
-.under-section {
 
-    padding-bottom: 20px;
-}
 
 .holder .section {
     color: var(--tittle-text-color);
